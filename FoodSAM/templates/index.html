@@ -1,0 +1,14 @@
+{% load socialaccount %}
+{% providers_media_js %}
+
+<!DOCTYPE html>
+<head>
+	<title>Social login</title>
+</head>
+
+<body>
+	{{user}}
+	<button><a href="/register">Sign Up</button>
+	<button><a href="{%provider_login_url "facebook" method="oauth2" %}"> Facebook Login </a></button>
+
+</body>
